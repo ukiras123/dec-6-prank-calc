@@ -1,8 +1,8 @@
 import React from 'react'
 
-function CustomButton({ label, cls }) {
+function CustomButton({ label, cls, clickHandler }) {
     return (
-        <div className={cls} >{label}</div>
+        <div className={cls} onClick={() =>clickHandler(label)} >{label}</div>
     )
 }
 
